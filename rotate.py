@@ -35,7 +35,7 @@ class Solution:
         for i in reversed(range(len(matrix))):
             temp = []
             for j in range(len(matrix[i])):
-                temp.append[matrix[i][j]]
+                temp.append(matrix[i][j])
             
             final.append(temp)
         
