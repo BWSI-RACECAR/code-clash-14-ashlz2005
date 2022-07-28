@@ -32,7 +32,7 @@ class Solution:
         # TODO: Write code below to return a nested list with the solution to the prompt
         final = []
 
-        for i in range(0, len(matrix), -1):
+        for i in range(len(matrix) - 1, -1, -1):
             temp = []
             for j in range(len(matrix[i])):
                 temp.append(matrix[i][j])
