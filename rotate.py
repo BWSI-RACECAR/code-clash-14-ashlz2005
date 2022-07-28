@@ -32,12 +32,12 @@ class Solution:
         # TODO: Write code below to return a nested list with the solution to the prompt
         final = []
 
-        for i in range(len(matrix) - 1, -1, -1):
+        for i in range(len(matrix)):
             temp = []
-            for j in range(len(matrix[i])):
-                temp.append(matrix[i][j])
+            for j in range(len(matrix) - 1, -1, -1):
+                temp.insert(0, matrix[i][j])
             
-            final.append(temp)
+            final.insert(0, temp)
         
         return final
 
