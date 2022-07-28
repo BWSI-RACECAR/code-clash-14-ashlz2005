@@ -35,9 +35,9 @@ class Solution:
         for i in range(len(matrix)):
             temp = []
             for j in range(len(matrix) - 1, -1, -1):
-                temp.insert(0, matrix[i][j])
+                temp.append(matrix[j][i])
             
-            final.insert(0, temp)
+            final.append(temp)
         
         return final
 
